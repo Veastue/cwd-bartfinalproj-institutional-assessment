@@ -1,0 +1,178 @@
+
+.new-nav-cont {
+    background-color: white;
+    padding: 6px 12px;
+    color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.new-nav-cont span {
+    padding-left: 8px;
+}
+
+.send-btn {
+    border: 0.3px solid #326273;
+    background-color: #326273;
+}
+.send-btn a {
+    color:white !important;
+}
+
+
+container-curb {
+    background-color: white;
+}
+.card-cust {
+    border-radius: 12px; 
+    overflow: hidden; 
+    margin: 0px 15px 20px 15px;
+}
+
+/* .iris {
+    background-image: url('images/FirstGIF.gif') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+} */
+
+.update-btn {
+    color:#326273;
+    font-size: 20px;
+    border: 0.3px solid #326273;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.update-btn:hover {
+    background-color: #326273;
+    color: white;
+    font-size: 20px;
+}
+
+
+.transaction-subtitle {
+    font-size: 12px;
+    color: #646464;
+    font-weight: 300;
+}
+
+.transaction-title {
+    font-size: 16px;
+}
+
+.transaction-id {
+    border: 0.3px solid #adadad;
+    border-radius: 5px;
+    padding: 1px 4px;
+    font-size: 12px;
+}
+
+.row-4 .transaction-id {
+    border: none;
+}
+
+.row-1 .transaction-status {
+    color: rgb(0, 153, 0)
+}
+
+.row-2 .transaction-status {
+    color: #ebcb58;
+}
+
+.row-3 .transaction-status {
+    color: red
+}
+
+.transaction-date {
+    color: #646464;
+    font-size: 12px
+}
+
+.row-1 .transaction-amount {
+    color: red;
+} 
+
+.row-2 .transaction-amount{
+    color: red;
+}
+
+.row-3 .transaction-amount{
+    color: rgb(162, 68, 199);
+}
+.dropdown-content {
+    top: 65px !important;
+    min-width: 300px !important;
+}
+
+.dropdown-content a {
+    color: #326273 !important;
+}
+
+.dropdown-content a:hover {
+    color: white !important;
+    background-color: #326273;
+}
+
+
+
+.ud-cust {
+    border-radius: 12px;
+    background-color: #f1f1f1;
+    padding: 0px 5px;
+}
+
+.tabs .indicator {
+    visibility: hidden;
+}
+
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: rgb(32, 62, 73) !important; 
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white !important;
+  }
+
+.tabs .tab {
+    display: inline-block;
+    text-align: center;
+    line-height: 32px !important;
+    height: 32px !important;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px !important;
+    text-transform: uppercase;
+}
+
+span {
+    margin-left: 8px;
+}
+
+.card-panel {
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 24px;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 10px !important;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 3px 1px -2px rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0) !important;
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 3px 1px -2px rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0) !important;
+  }
+
+.a-cust-new > * {
+    background-color: black !important;
+    color: white !important;
+}
+
+.a-cust-new:hover {
+    background-color: #f1f1f1 !important;
+    color: black !important;
+    border: 0.3px solid #adadad !important;
+    border-radius: 5px !important;
+}

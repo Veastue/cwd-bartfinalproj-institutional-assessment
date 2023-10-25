@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/iconmonstr-plus-1-240 (1).png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Styles/landing.css">
+    <link rel="stylesheet" href="Styles/Dashboard.css">
+    <!--Materialize CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Fontawesome icons kit-->
+    <script src="https://kit.fontawesome.com/f1afa0846d.js" crossorigin="anonymous"></script>
+    <!-- Fontawesome icons CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- line icons CDN -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- Nav -->
+    <div class="navbar-fixed">
+        <nav class="white darken-4">
+            <div class="container">
+                <div class="nav-wrapper"> 
+                            <a href="" class="brand-logo black-text" target="_blank">
+                                <img src="images/Logo.png" alt="" style="max-width: 130px;
+                                margin-top: 15px;">
+                            </a>
+                            <a href="#" data-target="side-nav" class="sidenav-trigger a-cust"><i class="fa-solid fa-bars"></i>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a class="a-cust" href="index.html" target="_blank">Home</a></li>
+                        <li class="active-new"><a class="a-cust">Dashboard</a></li>
+                        <li><a class="a-cust" href="helpcenter.html" target="_blank">Help Center</a></li>
+                        <li style="margin-left: 20px;">
+                            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                                <div class="row valign-wrapper">
+                                    <div class="col s2">
+                                        <i class="fa-solid fa-user teal-text text-darken-2 small"></i>
+                                    </div>
+                                    <div class="col s8" style="margin-left: -10px;">
+                                        <a href="" class="a-cust">
+                                            <span class="black-text">
+                                                Hi, Guest M.
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col s2" style="margin-left: -40px;">
+                                        <a href="" class="a-cust dropdown-trigger" data-target='dropdown1'><i class="fa-solid fa-angle-down teal-text text-darken-2 small"></i></a>
+                                    </div>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown1' class='dropdown-content'>
+                                        <li><a href="#!">Account</a></li>
+                                        <li><a href="#!">Notification</a></li>
+                                        <li><a href="#!">Dashboard</a></li>
+                                        <li><a href="index.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Sidenav Structure -->
+    <ul id="side-nav" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                <img src="images/fourthGif.gif">
+                </div>
+                <a href="#user"><img class="circle" src="images/daaa618264f54c14a65f1105d23bbb34.jpg"></a>
+                <a href="#name"><span class="white-text name">Guest M.</span></a>
+                <a href="#email"><span class="white-text email">guestm@emailjunk.com</span></a>
+            </div>
+        </li>
+        <li>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header"><i class="lni lni-users"></i>Account</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="" class="waves-effect">Profile</a></li>
+                            <li><a href="" class="waves-effect">Account</a></li>
+                            <li><a href="" class="waves-effect">Settings</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header"><i class="fa-solid fa-credit-card"></i>Cards</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="" class="waves-effect ">Cards</a></li>
+                            <li><a href="" class="waves-effect">Card Setting</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li> 
+            <div class="center"><a href="index.html" class="a-cust"><i class="lni lni-cog"></i><span style="margin-left: 5px;">Logout</span></a></div>
+        </li>
+    </ul>
+    <br>
+    <!-- Account tabs -->
+    <div class="container">
+        <h3>Hi, Guest M.</h3>
+        <br>
+        <ul id="tabs-swipe-demo" class="tabs bg-color ">
+            <li class="tab col s3 white"><a class=" a-cust black-text" href="#Step01"><i class="lni lni-home"></i><span>Dashboard</span></a></li>
+            <li class="tab col s3 white"><a class=" a-cust black-text" href="#Step02"><i class="lni lni-list"></i><span>Activities</span></a></li>
+            <li class="tab col s3 white"><a class=" a-cust black-text" href="#Step03"><i class="lni lni-dollar"></i><span>Refferal</span></a></li>
+            <li class="tab col s3 white"><a class=" a-cust black-text" href="#Step04"><i class="lni lni-help"></i><span>Help</span></a></li>
+            <li class="tab col s3 white"><a class=" a-cust black-text" href="#Step05"><i class="lni lni-paperclip"></i><span>Other</span></a></li>
+        </ul>
+        <div id="Step01" class="col s12">
+            <h5>Dashboard</h5>
+            <div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card-panel" style="background-image: url('images/FirstGIF.gif') !important;
+                        background-repeat: no-repeat;
+                        background-attachment: cover;
+                        background-position: center center;">
+                            <div class="row" style="background-color: rgba(255,255,255,0.7);">
+                                <div class="col s9 m9">
+                                    <p style="
+                                        background-color: rgba(255,255,255,0.7);
+                                        border-radius: 5px;
+                                        text-align: center;
+                                        font-weight: 500;  ">USD Account Total Balance</p>
+                                    <p class="flow-text" 
+                                    style="
+                                    
+                                    background-color: rgba(255,255,255,0.7);
+                                    border-radius: 5px;
+                                    text-align: center;
+                                    font-weight: 200;
+                                    ">$308,550.69</p>
+                                </div>
+                                <div class="col s3 m3">
+                                    <div class="container center">
+                                        <br>
+                                        <a href="" class="a-cust right"><h6>See All</h6></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card-panel" style="background-image: url('images/thirdGif.gif') !important;
+                            background-repeat: no-repeat;
+                            background-attachment: cover;
+                            background-size: 100%;
+                            background-position: center center;"    >
+                            <div class="row " style="background-color: rgba(255,255,255,0.7);">
+                                <div class="col s9 m9">
+                                    <p style="
+                                        
+                                        background-color: rgba(255,255,255,0.7);
+                                        border-radius: 5px;
+                                        text-align: center;
+                                        font-weight: 500;  ">PHP Account Total Balance</p>
+                                    <p class="flow-text" 
+                                    style="
+                                    
+                                    background-color: rgba(255,255,255,0.7);
+                                    border-radius: 5px;
+                                    text-align: center;
+                                    font-weight: 200;
+                                    ">₱450,550.57</p>
+                                </div>
+                                <div class="col s3 m3">
+                                    <div class="container">
+                                        <br>
+                                        <a href="" class="a-cust right"><p>See All</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="center card-panel white">
+                            <a href="#!" class="z-depth-0 btn-flat waves-effect waves-teal large" style="width: 100%;"><i class="lni lni-circle-plus large "></i> <span>Add account</span></a>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="center card-panel">
+                            <div class="row valign-wrapper ">
+                                <div class="col s6">
+                                    <a href="#!" class="a-cust "><Span class="update-btn">Send</Span></a>
+                                </div>
+                                <div class="col s6">
+                                    <a href="#!" class="a-cust"><Span class="update-btn">Request</Span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Step02" class="col s12">
+            <h5>Activities</h5>
+            <div class="row">
+                <div class="col s12 m12 l6 ">
+                    <div class="card-panel">
+                        <div class="row valign-wrapper">
+                            <div class="col s12 m6">
+                                <h5 style="margin-left: 20px;">This Month's Highlight</h5>
+                            </div>
+                            <div class="col s12 m6">
+                                <div class="container ">
+                                    <a href="" class="a-cust right "><h6>See All</h6></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row valign-wrapper ">
+                            <div class="col l6 hide-on-med-and-down">
+                                <img src="images/Span img (1).png" alt=""  style="max-width: 180px;">
+                            </div>
+                            <div class="col s12 m12">
+                                <p class="center">Spending</p>
+                                <p class="center" style="font-size: 24px; font-weight: 500;">$5,330.69</p>
+                                <br>
+                                <div class="row center">
+                                    <div class="col s6 m6 l7">Bills</div>
+                                    <div class="col s6 m6 l3"><Span>60%</Span></div>
+                                </div>
+                                <div class="divider"></div>
+                                <br>
+                                <div class="row center">
+                                    <div class="col s6 m6 l7">School</div>
+                                    <div class="col s6 m6 l3"><Span>30%</Span></div>
+                                </div>
+                                <div class="divider"></div>
+                                <br>
+                                <div class="row center">
+                                    <div class="col s6 m6 l7">Savings</div>
+                                    <div class="col s6 m6 l3"><Span>10%</Span></div>
+                                    <div class="divider"></div>
+                                </div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                        <div class="container center ud-cust">
+                            <div class="row valign-wrapper ">
+                                <div class="col s4">
+                                    <a href="#modal1" class="a-cust modal-trigger"><Span class="update-btn">Update</Span></a>
+                                </div>
+                                <div class="col s8">
+                                    <span>Your spending decrease 5% from last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l6 ">
+                    <div class="card-panel" style="max-height: 565px; overflow: auto;">
+                        <div class="row valign-wrapper">
+                            <div class="col s6">
+                                <div class="container "><h6>Transaction History</h6></div>
+                            </div>
+                            <div class="col s6">
+                                <div class="container">
+                                    <a class="a-cust right">See All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <table class="responsive-table centered striped">
+                            <br class="hide-on-large-only">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>ID</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                    <th>Fee</th>
+                                </tr>
+                            </thead>
+                    
+                            <tbody>
+                                <tr class="row-1">
+                                <td>
+                                    <p class="transaction-subtitle">01</p>
+                                </td>
+                                <td>
+                                    <span class="transaction-title">Bus Trans</span>
+                                    <span class="transaction-subtitle">Transport</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-id">#694351230</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-status">Completed</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-date">6 Sept 2023 at 14:14</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-amount">-$23.99</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-fee">$0.00</span>
+                                </td>
+                                </tr>
+                                <tr class="row-2">
+                                <td>
+                                    <p class="transaction-subtitle">02</p>
+                                </td>
+                                <td>
+                                    <span class="transaction-title">Star Box</span>
+                                    <span class="transaction-subtitle">Food & Beverages</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-id">#694871738</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-status">Pending</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-date">7 Sept 2023 at 10:14</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-amount">-$17.50</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-fee">$0.00</span>
+                                </td>
+                                </tr>
+                                <tr class="row-3">
+                                <td>
+                                    <p class="transaction-subtitle">03</p>
+                                </td>
+                                <td>
+                                    <span class="transaction-title">Cor Vet</span>
+                                    <span class="transaction-subtitle">Lending Corp.</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-id">#694871738</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-status">Failed</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-date">15 Oct 2023 at 22:29</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-amount">$105.00</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-fee">$1.00</span>
+                                </td>
+                                </tr>
+                                <tr class="row-1">
+                                <td>
+                                    <p class="transaction-subtitle">04</p>
+                                </td>
+                                <td>
+                                    <span class="transaction-title">Bus Trans</span>
+                                    <span class="transaction-subtitle">Transport</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-id">#694351230</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-status">Completed</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-date">6 Sept 2023 at 14:14</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-amount">-$23.99</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-fee">$0.00</span>
+                                </td>
+                                </tr>
+                                <tr class="row-2">
+                                <td>
+                                    <p class="transaction-subtitle">05</p>
+                                </td>
+                                <td>
+                                    <span class="transaction-title">Star Box</span>
+                                    <span class="transaction-subtitle">Food & Beverages</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-id">#694871738</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-status">Pending</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-date">7 Sept 2023 at 10:14</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-amount">-$17.50</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-fee">$0.00</span>
+                                </td>
+                                </tr>
+                                <tr class="row-3">
+                                <td>
+                                    <p class="transaction-subtitle">06</p>
+                                </td>
+                                <td>
+                                    <span class="transaction-title">Cor Vet</span>
+                                    <span class="transaction-subtitle">Lending Corp.</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-id">#694871738</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-status">Failed</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-date">15 Oct 2023 at 22:29</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-amount">$105.00</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-fee">$1.00</span>
+                                </td>
+                                </tr>
+                                <tr class="row-1">
+                                <td>
+                                    <p class="transaction-subtitle">07</p>
+                                </td>
+                                <td>
+                                    <span class="transaction-title">Bus Trans</span>
+                                    <span class="transaction-subtitle">Transport</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-id">#694351230</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-status">Completed</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-date">6 Sept 2023 at 14:14</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-amount">-$23.99</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-fee">$0.00</span>
+                                </td>
+                                </tr>
+                                <tr class="row-2">
+                                <td>
+                                    <p class="transaction-subtitle">08</p>
+                                </td>
+                                <td>
+                                    <span class="transaction-title">Star Box</span>
+                                    <span class="transaction-subtitle">Food & Beverages</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-id">#694871738</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-status">Pending</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-date">7 Sept 2023 at 10:14</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-amount">-$17.50</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-fee">$0.00</span>
+                                </td>
+                                </tr>
+                                <tr class="row-3">
+                                <td>
+                                    <p class="transaction-subtitle">09</p>
+                                </td>
+                                <td>
+                                    <span class="transaction-title">Cor Vet</span>
+                                    <span class="transaction-subtitle">Lending Corp.</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-id">#694871738</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-status">Failed</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-date">15 Oct 2023 at 22:29</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-amount">$105.00</span>
+                                </td>
+                                <td>
+                                    <span class="transaction-fee">$1.00</span>
+                                </td>
+                                </tr>
+                            </tbody>
+                            
+                            </table>
+                            <br>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div id="Step03" class="col s12">
+            <h5>Referrals</h5>
+            <div class="card-panel">
+                <div class="row">
+
+                    <div class="col s12 m8 offset-m2 l12">
+                        <div class="card-panel grey lighten-5 z-depth-1">
+                            <div class="row valign-wrapper">
+                                <div class="col s2">
+                                    <img src="images/Span img (2).png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                                </div>
+                                <div class="col s10">
+                                    <span class="black-text">
+                                        User Clark uses your link to download the app.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col s12 m8 offset-m2 l12">
+                        <div class="card-panel grey lighten-5 z-depth-1">
+                            <div class="row valign-wrapper">
+                                <div class="col s2">
+                                    <img src="images/Span img (3).png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                                </div>
+                                <div class="col s10">
+                                    <span class="black-text">
+                                        User Beth cash in, you earn <span class="green-text">1000php</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col s12 m8 offset-m2 l12">
+                        <div class="card-panel grey lighten-5 z-depth-1">
+                            <div class="row valign-wrapper">
+                                <div class="col s2">
+                                    <img src="images/Span img (2).png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                                </div>
+                                <div class="col s10">
+                                    <span class="black-text">
+                                        User Clark uses your link to download the app.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Step04" class="col s12">
+            <h5>Help</h5>
+            <div class="card-panel">
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Frequently Asked Questions</h4>
+                        <span>Can't find answer you are looking for?</span> <span><a class="waves-effect waves-light btn-small pulse" href="helpcenter.html" target="_blank">Go to Help Center</a></span>
+                    </div>
+                    <div class="col s12">
+                        <br>
+                        <ul class="collapsible">
+                            <li>
+                            <div class="collapsible-header">How do I change my password and/or Secure PIN?</div>
+                            <div class="collapsible-body"><p>
+                                
+                                <p>You can change your password and Secure PIN by following the steps below:</p>
+                
+                                <p>Updating your Password</p>
+                                
+                                <p>1. Log in to Apostolos app</p>
+                                
+                                <p>2. Go to Me page and click Account Security</p>
+                                
+                                <p>3. Click Update Login Password</p>
+                                
+                                <p>4. Create a new password and click Submit</p>
+                                
+                                <p>5. Receive a confirmation that your password has been successfully updated</p>
+                                
+                                <p>Updating your PIN</p>
+                                
+                                <p>1. Log in to Apostolos app</p>
+                                
+                                <p>2. Go to Me page and click Account Security</p>
+                                
+                                <p>3. Click Update PIN</p>
+                                
+                                <p>4. Enter your old Secure PIN</p>
+                                
+                                <p>5. Input and confirm your new 6-digit Secure PIN</p>
+                                
+                                <p>6. Receive a confirmation that your Secure PIN has been successfully updated
+                                </p>
+                
+                                <p>Note: If you have encountered issues logging in to your Apostolos app, please call our Customer Service at (+632) 8891 7000.</p>
+                
+                                </p></div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header">What are the applicable rates, fees and limits for my Apostolos account?</div>
+                              <div class="collapsible-body">Apostolos offers high interest earnings for any amount in your Apostolos account, with no minimum balance required. Please visit https://www.apostolos.ph/product/savings to learn about the current interest rates available.
+                                <table class="centered highlight striped responsive-table">
+                                    <thead>
+                                      <tr>
+                                          <th>Transfer Type</th>
+                                          <th>Minimum Amount</th>
+                                          <th>Maximum Amount (Per Transaction)</th>
+                                          <th>Amount</th>
+                                      </tr>
+                                    </thead>
+                            
+                                    <tbody>
+                                      <tr>
+                                        <td>Transfer to Apostolos Account</td>
+                                        <td>PHP 1</td>
+                                        <td>PHP 1,000,000</td>
+                                        <td>PHP 1,000,000</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Transfer to Other Banks/e-Wallet via InstaPay</td>
+                                        <td>PHP 1</td>
+                                        <td>PHP 50,000</td>
+                                        <td>PHP 1,000,000</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Transfer to Other Banks/e-Wallet via PESONet</td>
+                                        <td>PHP 1</td>
+                                        <td>PHP 1,000,000</td>
+                                        <td>PHP 1,000,000</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <p>
+                                    Maaari mong baguhin ang mga Transaction Limits (Daily o kada Transaksyon) sa iyong Apostolos app.
+                                  </p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header">Can I withdraw cash from my Apostolos account via an ATM?</div>
+                              <div class="collapsible-body">Apostolos currently does not offer an ATM or debit card. However, you can withdraw cash in your Apostolos account by transferring to other banks or e-Wallets that offer ATM withdrawals.</div>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div id="Step05" class="col s12">
+            <h5>Other</h5>
+            <div class="card-panel">
+                <div class="row">
+                    <div class="col s12">
+                        <h5 class="center">You can put anything here</h5>
+                    </div>
+            </div>
+            </div>
+        </div>
+            <div style="height:100px">
+        
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Structure -->
+    <div class="container">
+        
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Update Notice</h4>
+                <p>You're about to update your update transactions and settings, this will change your previous settings. You can revert your setting by going to settings and find revert settings button. Click OK to proceed.</p>
+            </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="M.toast({html: 'Updated Successfully'}),M.toast({html: 'Na Mekus Mekus na ni Insan'})">OK</a>
+        </div>
+        </div>
+        <br><br>
+        <div class="fixed-action-btn toolbar hide-on-med-and-up">
+            <a class="btn-floating btn-large">
+                <i class="large material-icons"><i class="lni lni-menu"></i></i>
+            </a>
+            <ul>
+                <li><a class="grey lighten-2 black-text"><i class="lni lni-home"></i></a></li>
+                <li><a class="grey lighten-2 black-text"><i class="lni lni-credit-cards"></i></a></li>
+                <li><a class="grey lighten-2 black-text"><i class="fa-solid fa-dollar-sign fa-xl"></i></a></li>
+                <li><a class="grey lighten-2 black-text"><i class="lni lni-investment"></i></a></li>
+                <li><a class="grey lighten-2 black-text"><i class="lni lni-user"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="divider"></div>
+        <br>
+        <footer>
+            <div class="container">
+                <div class="row">
+                <div class="col m3 s6">
+                    <h5 class="black-text">Follow Us</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col s2"><a href="" class="a-cust"><i class="lni lni-facebook small"></i></a></div>
+                        <div class="col s2"><a href="" class="a-cust"><i class="lni lni-twitter small"></i></a></div>
+                        <div class="col s2"><a href="" class="a-cust"><i class="lni lni-github-original small"></i></a></div>
+                        <div class="col s3"></div>
+                    </div>
+                    <a><img src="images/get-it-on-google-play.png" width="150px" alt=""></a>
+                    <a><img src="images/download on appstore.png" width="148px" alt=""></a>
+                    <br>
+                </div>
+
+                <div class="col m3 s6">
+                    <h5 class="black-text">Apostolos</h5>
+                    <ul>
+                    <li><a class="grey-text" href="#!">Programs</a></li>
+                    <li><a class="grey-text" href="#!">Career</a></li>
+                    <li><a class="grey-text" href="#!">Membership</a></li>
+                    <li><a class="grey-text" href="#!">Mobile app</a></li>
+                    </ul>
+                </div>
+
+                <div class="col m3 s6">
+                    <h5 class="black-text">About</h5>
+                    <ul>
+                    <li><a class="grey-text" href="#!">Company</a></li>
+                    <li><a class="grey-text" href="#!">Governance</a></li>
+                    <li><a class="grey-text" href="#!">Sustainabilty</a></li>
+                    <li><a class="grey-text" href="#!">News</a></li>
+                    </ul>
+                </div>
+
+                <div class="col m3 s6">
+                    <h5 class="black-text">Terms & Conditions</h5>
+                    <ul>
+                    <li><a class="grey-text" href="#!">Terms of Service</a></li>
+                    <li><a class="grey-text" href="#!">Privacy Policy</a></li>
+                    <li><a class="grey-text" href="#!">Fraud Awareness</a></li>
+                    <li><a class="grey-text" href="#!">Branch Location</a></li>
+                    </ul>
+                </div>
+
+                </div>
+                <div class="center s12">Deposits are insured by the PDIC for up to P500,000 per depositor. For any questions, please call Apostolos's Customer Service Hotline at (+632) 8891 7000. Nereid Philippines Inc. (A Rural Bank) is regulated by the Bangko Sentral ng Pilipinas, with website: www.bsp.gov.ph.
+                    <p>
+                        Copyright © 2023 Nereid Philippines Inc. (A Rural Bank)
+                    </p>
+                </div>
+        </footer>
+    
+     <!-- JQuery CDN-->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <!-- Materialize CDN-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <!-- script mod -->
+     <script>
+          $(document).ready(function(){
+            $('.tabs').tabs();
+            $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown();
+            $('.fixed-action-btn').floatingActionButton({
+                toolbarEnabled: true
+            });
+            $('.slider').slider({
+                height: 650
+            });
+            $('.materialboxed').materialbox({
+                inDuration: 500,
+                outDuration: 500
+            });
+            $('.collapsible').collapsible();
+            $('.modal').modal();
+        })
+     </script>
+
+</body>
+</html>
